@@ -1,0 +1,25 @@
+{
+  "id": "./",
+  "name": "Chiavail Scheduler Notifications",
+  "short_name": "Chiavail通知",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "lang": "ja",
+  "theme_color": "#18384a",
+  "background_color": "#f3f6f7",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
