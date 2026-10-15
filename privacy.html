@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <title>プライバシーポリシー | Life Scheduler Pi</title>
+  <style>
+:root {
+  color-scheme: light dark;
+  --bg: #f4f7f8;
+  --fg: #173746;
+  --muted: #5e737d;
+  --card: #ffffff;
+  --border: #d7e0e4;
+  --link: #1769aa;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #11181c;
+    --fg: #e8f0f3;
+    --muted: #a9bac2;
+    --card: #172126;
+    --border: #2c3c43;
+    --link: #7ec8ff;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: var(--bg);
+  color: var(--fg);
+  line-height: 1.7;
+}
+main {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 48px 20px 72px;
+}
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 28px;
+}
+h1 { margin-top: 0; font-size: 2rem; line-height: 1.25; }
+h2 { margin-top: 2rem; font-size: 1.25rem; }
+p, li { font-size: 1rem; }
+small, .muted { color: var(--muted); }
+nav {
+  margin-top: 28px;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+a { color: var(--link); }
+footer {
+  margin-top: 32px;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+</style>
+</head>
+<body>
+<main>
+  <div class="card">
+    <h1>プライバシーポリシー</h1>
+    <p>
+      Life Scheduler Pi（以下「本アプリ」）は、個人利用の生活スケジューラです。
+      本ポリシーでは、本アプリにおけるデータの取り扱いについて説明します。
+    </p>
+
+    <h2>1. 取得・利用する情報</h2>
+    <p>
+      本アプリは、ユーザー本人が許可した Google アカウントを通じて、
+      Google Sheets に保存された予定・設定等のデータを読み取ります。
+      OAuth 連携で取得した認証情報は、Raspberry Pi 上のユーザー専用領域に保存されます。
+    </p>
+
+    <h2>2. 利用目的</h2>
+    <ul>
+      <li>生活予定の表示</li>
+      <li>予定に基づく通知判定</li>
+      <li>Raspberry Pi 上の常設ダッシュボード表示</li>
+      <li>個人用の生活管理機能の提供</li>
+    </ul>
+
+    <h2>3. 第三者提供</h2>
+    <p>
+      取得した Google ユーザーデータを販売したり、広告目的で利用したり、
+      開発者本人以外の第三者へ提供したりすることはありません。
+      ただし、機能提供に必要な範囲で Google の各サービスおよび Web Push 配信基盤等が
+      通信経路として利用される場合があります。
+    </p>
+
+    <h2>4. データの保存</h2>
+    <p>
+      Google OAuth の認証情報、Web Push の購読情報、その他の秘密情報は、
+      開発者本人が管理する Raspberry Pi 上に保存されます。
+      公開 Web ページや公開 Git リポジトリには保存しません。
+    </p>
+
+    <h2>5. データの削除・アクセス停止</h2>
+    <p>
+      本アプリによる Google データへのアクセスは、Google アカウントの権限設定から
+      取り消すことができます。また、Raspberry Pi 上に保存された認証情報を削除することで、
+      本アプリからのアクセスを停止できます。
+    </p>
+
+    <h2>6. ポリシーの変更</h2>
+    <p>
+      本アプリの機能変更に合わせて、本ポリシーを更新する場合があります。
+    </p>
+
+    <nav>
+      <a href="home.html">ホーム</a>
+      <a href="terms.html">利用規約</a>
+    </nav>
+  </div>
+  <footer>Last updated: 2026-10-15</footer>
+</main>
+</body>
+</html>
